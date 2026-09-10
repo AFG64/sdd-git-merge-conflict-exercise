@@ -13,15 +13,12 @@ def calculate_total(
     # TODO: Add an 8% sales tax to every order.
     # its argument (apply_discount, apply_tax, or apply_shipping)
 
-    if apply_discount:
-        if total > 50:
-            total = total - (total*10/100)
-            
-
-    if apply_tax:
-        total = total + (8/100)*total
+    if apply_shipping:
+        total = total + 5
 
     return total
+
+    
 
 
 if __name__ == "__main__":
